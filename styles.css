@@ -1,97 +1,152 @@
+@font-face {
+    font-family: Norse-Bold;
+    src: url(fonts/Norse-Bold.otf);
+}
+
 body {
     margin: 0;
     padding: 0;
+    font-family: Norse-Bold, sans-serif;
 }
 
-.general-content {
+.main {
     display: flex;
-    height: 100vh;
+    flex-direction: row;
     width: 100vw;
+    height: 100vh;
 }
 
-
-.left-column { 
-    background-image: url("halie-west.jpg");
-    width: 40vw;
-    background-size: cover;
+.left {
+    background-image: url("images/halie-west-25xggax4bSA-unsplash.jpg");
+    width: 35vw;
     background-repeat: no-repeat;
-}
-
-#logo {
-    background: rgba(0, 0, 0, 0.4);
-    width: 100%;
+    background-size: cover;
+    color: white;
+    font-family: Norse-Bold, sans-serif;
     display: flex;
-    justify-content: center;
-}
-
-
-.right-column {
-    display: flex;
-    width: 60vw;
     flex-direction: column;
+}
+
+.forImage {
+    height: 40vh;
+    display: flex;
+    align-items: flex-end;
+}
+
+.semi-transparent {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    background-color: rgba(10,10,10,0.5);
+    align-items: center;
+    font-size: 25px;
+}
+
+.forFooter {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+
+    height: 60vh;
+    width: 100%;
+}
+
+.a-footer {
+    color: white;
+}
+
+.p-footer {
+    font-size: 12px;
+    text-align: center;
+}
+
+.right {
+    display: flex;
+    flex-direction: column;
+    width: 65vw;
     background-color: #fafafa;
 }
 
-.header-content {
+.first {
     height: 40vh;
     display: flex;
     justify-content: flex-start;
     align-items: flex-end;
     margin-left: 5%;
-    margin-bottom: 5px;
+    margin-bottom: 5%;
 }
 
-.form-content {
-    display: flex;
-    flex-direction: column;
+.second {
     height: 30vh;
     background-color: white;
-    width: 60%;
+    justify-content: space-between;
+    box-shadow: 2px 3px #e5e7eb;
+}
+
+.form-main-div {
+    display: flex;
     margin-left: 50px;
+    width: 60%;
     justify-content: space-between;
 }
 
-form {
-    display: flex;
-    flex-direction: row;
-    
-}
-
-.button-content {
-    height: 30vh;
-}
-
-form-left-column,
-form-right-column {
+.form-div {
     display: flex;
     flex-direction: column;
+    margin-bottom: 10px;
 }
 
-
-.input {
-    display: flex;
-    flex-direction: column;
-    margin: 10px;
-}
-
-input
-{
-    border: solid 1px #E5E7EB;
+input {
     width: 200px;
+    border: 1px solid #e5e7eb;
     height: 20px;
     border-radius: 5px;
 }
 
 input:focus {
-    border: solid 3px blue;
+    border: 2px solid blue;
 }
 
 input:invalid {
-    border: 2px solid red;
+    border: 1px solid red;
 }
 
-button {
-    margin-top: 10px;
-    background-color: #596D48;
-    font: white;
+label {
+    font-size: 15px;
+    color: #6c6e71;
 }
+
+#error-message {
+    color: red;
+    font-size: 10px;
+    margin: 1px;
+}
+
+
+.btn-green {
+    background-color: #596d48;
+    color: white;
+    border: 1px solid #596d48;
+    border-radius: 10px;
+    height: 40px;
+    width: 180px;
+    font-weight: bolder;
+    font-size: small;
+}
+
+.third {
+    margin-left: 20px;
+    margin-top: 10px;
+}
+
+.hyperlink {
+    margin-left: 20px;
+    margin-top: 10px;
+}
+
+.login {
+    color: #596d48;
+    text-decoration: none;
+    font-weight: bold;
+}
+
