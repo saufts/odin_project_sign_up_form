@@ -9,12 +9,6 @@ body {
     width: 100vw;
 }
 
-.right-column {
-    display: flex;
-    width: 60vw;
-    flex-direction: column;
-    justify-content: center;
-}
 
 .left-column { 
     background-image: url("halie-west.jpg");
@@ -31,12 +25,40 @@ body {
 }
 
 
-.header-content {
-    background-color: lightgrey;
-    height: 40vh;
+.right-column {
+    display: flex;
+    width: 60vw;
+    flex-direction: column;
+    background-color: #fafafa;
 }
 
+.header-content {
+    height: 40vh;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    margin-left: 5%;
+    margin-bottom: 5px;
+}
 
+.form-content {
+    display: flex;
+    flex-direction: column;
+    height: 30vh;
+    background-color: white;
+    width: 60%;
+    margin-left: 50px;
+    justify-content: space-between;
+}
+
+form {
+    display: flex;
+    flex-direction: row;
+}
+
+.button-content {
+    height: 30vh;
+}
 
 form-left-column,
 form-right-column {
@@ -44,16 +66,8 @@ form-right-column {
     flex-direction: column;
 }
 
-.form-content {
-    display: flex;
-    height: 30vh;
-}
 
-.button-content {
-    height: 30vh;
-}
-
-/* .input {
+.input {
     display: flex;
     flex-direction: column;
     margin: 10px;
@@ -62,6 +76,9 @@ form-right-column {
 input
 {
     border: solid 1px #E5E7EB;
+    width: 200px;
+    height: 20px;
+    border-radius: 5px;
 }
 
 input:focus {
@@ -72,4 +89,4 @@ input:focus {
 button {
     background-color: #596D48;
     font: white;
-} */
+}
