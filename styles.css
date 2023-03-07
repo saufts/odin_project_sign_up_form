@@ -1,10 +1,12 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
 .general-content {
     display: flex;
-    height: 100%;
-    margin: 0px;
-    padding: 0px;
-    width:100vw;
-    justify-content: center;
+    height: 100vh;
+    width: 100vw;
 }
 
 .right-column {
@@ -12,24 +14,13 @@
     width: 60vw;
     flex-direction: column;
     justify-content: center;
-    align-items: start;
-    flex-grow: 2;
-
-    margin-left: 30px;
-    margin-right: 30px;
 }
 
 .left-column { 
-    background: url("halie-west.jpg") center fixed no-repeat;
-    flex-grow: 1;
+    background-image: url("halie-west.jpg");
     width: 40vw;
-    min-width: 280px;
-    height: 100vh;
     background-size: cover;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    /* background-attachment: fixed; */
+    background-repeat: no-repeat;
 }
 
 #logo {
@@ -39,39 +30,46 @@
     justify-content: center;
 }
 
-img {
-    width: 5rem;
-}
-
-h1 {
-    color: white;
-    align-self: center;
-}
 
 .header-content {
-    font: bold;
+    background-color: lightgrey;
+    height: 40vh;
 }
 
-/* input, label {
-    display: flex;
-    flex-direction: column;
-} */
+
 
 form-left-column,
 form-right-column {
     display: flex;
     flex-direction: column;
-    box-sizing: border-box;
-    flex-flow: column wrap;
 }
 
 .form-content {
     display: flex;
-    box-sizing: border-box;
+    height: 30vh;
 }
 
-.input {
+.button-content {
+    height: 30vh;
+}
+
+/* .input {
     display: flex;
     flex-direction: column;
     margin: 10px;
 }
+
+input
+{
+    border: solid 1px #E5E7EB;
+}
+
+input:focus {
+    border: solid 3px blue;
+    box-shadow: 2px inset;
+}
+
+button {
+    background-color: #596D48;
+    font: white;
+} */
