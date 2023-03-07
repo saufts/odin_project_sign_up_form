@@ -54,6 +54,7 @@ body {
 form {
     display: flex;
     flex-direction: row;
+    
 }
 
 .button-content {
@@ -83,10 +84,14 @@ input
 
 input:focus {
     border: solid 3px blue;
-    box-shadow: 2px inset;
+}
+
+input:invalid {
+    border: 2px solid red;
 }
 
 button {
+    margin-top: 10px;
     background-color: #596D48;
     font: white;
 }
